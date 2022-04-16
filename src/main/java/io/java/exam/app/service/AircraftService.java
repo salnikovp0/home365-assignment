@@ -28,7 +28,9 @@ public class AircraftService {
         newAircraft.setPrice(aircraft.getPrice());
 
         airline.addAircraft(newAircraft);
-        return aircraftRepository.save(newAircraft);
+        this.airlineRepository.save(airline);
+
+        return this.aircraftRepository.save(newAircraft);
     }
 
     public Aircraft sellAircraft(int aircraftId) {
