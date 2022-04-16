@@ -8,7 +8,7 @@ This is a demo application for a manage system of airlines
 
 ## Instructions
 1. Open IntelliJ IDE
-2. Start new project from existing sources in `https://github.com/mistriel/recruitment-java-exam`
+2. Start new project from existing sources in `https://github.com/salnikovp0/home365-assignment`
 3. Enable annotation processing (IntelliJ will hint you for that)   
 4. Run `DemoApplication` Server
 
