@@ -1,0 +1,45 @@
+### Create new Airline
+POST http://localhost:8080/airline
+Content-Type: application/json
+
+{
+  "name": "new Airline",
+  "budget": 100.1,
+  "homeLocation": {
+    "locationName": "New location",
+    "lat": 40.6892,
+    "lon": 74.0445
+  }
+}
+
+### Get all Airlines
+GET http://localhost:8080/airline
+
+### Get all distances from the selected Airline
+GET http://localhost:8080/airline/1/distances
+
+### Get all valid destination in range by aircraft distance
+GET http://localhost:8080/airline/1/destinations
+
+### Buy aircraft from one Airline to other
+POST http://localhost:8080/airline/buy
+Content-Type: application/json
+
+{
+  "airlineSellerId": 1,
+  "airlineBuyerId": 2,
+  "aircraftId": 1
+}
+
+### Add aircraft to airline
+POST http://localhost:8080/aircraft
+Content-Type: application/json
+
+{
+  "airlineId": 1,
+  "price": 77,
+  "distance": 1000
+}
+
+### Buy aircraft from one Airline to other
+POST http://localhost:8080/aircraft/2/sell
